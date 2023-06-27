@@ -17,6 +17,7 @@ function fizzbuzz(): void {
     rl.question("input a number, followed by the rules you want to apply seperated by space (3, 5, 7, 11, 13): ", function(input: string) {
         var inputs = input.split(' ');
         var number = +inputs[0];
+        inputs.shift();
 
         for (let i = 1; i < number; i++) {
             var ls: string[] = [];
